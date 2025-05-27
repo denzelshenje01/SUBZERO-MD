@@ -10,7 +10,7 @@ function convertToBool(text, fault = 'true') {
 
 module.exports = {
     // ===== BOT CORE SETTINGS =====
-    SESSION_ID: process.env.SESSION_ID || "",  // Your bot's session ID (keep it secure)
+    SESSION_ID: process.env.SESSION_ID || "SUBZERO-MD~1XnrOvonwOHq4cYDThiM",  // Your bot's session ID (keep it secure)
     PREFIX: getConfig("PREFIX") || ".",  // Command prefix (e.g., "., / ! * - +")
     BOT_NAME: process.env.BOT_NAME || getConfig("BOT_NAME") || "SUBZERO-MD",  // Bot's display name
     MODE: getConfig("MODE") || process.env.MODE || "public",        // Bot mode: public/private/group/inbox
@@ -45,10 +45,10 @@ module.exports = {
     BOT_IMAGE: getConfig("BOT_IMAGE") || "https://i.postimg.cc/XNTmcqZ3/subzero-menu.png",  // Bot's "alive" image
 
     // ===== SECURITY & ANTI-FEATURES =====
-    ANTI_CALL: process.env.ANTI_CALL || "true",
+    ANTI_CALL: process.env.ANTI_CALL || "false",
     ANTI_BAD: process.env.ANTI_BAD || "false",                  // Block bad words?
-    ANTI_LINK: process.env.ANTI_LINK || "true",                 // Block links in groups?
-    ANTI_VV: process.env.ANTI_VV || "true",                     // Block view-once messages?
+    ANTI_LINK: process.env.ANTI_LINK || "false",                 // Block links in groups?
+    ANTI_VV: process.env.ANTI_VV || "false",                     // Block view-once messages?
     DELETE_LINKS: process.env.DELETE_LINKS || "true",          // Auto-delete links?
     ANTI_DEL_PATH: process.env.ANTI_DEL_PATH || "log",          // Log deleted messages (or 'same' to resend)
     ANTI_BOT: process.env.ANTI_BOT || "true",
@@ -57,7 +57,7 @@ module.exports = {
     // ===== BOT BEHAVIOR & APPEARANCE =====
     FOOTER: process.env.FOOTER || "*© Gᴇɴᴇʀᴀᴛᴇᴅ ʙʏ Sᴜʙᴢᴇʀᴏ*",  // Bot description
     PUBLIC_MODE: process.env.PUBLIC_MODE || "true",              // Allow public commands?
-    ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || "true",        // Show bot as always online?
+    ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || "false",        // Show bot as always online?
     AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "true", // React to status updates?
     AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "true", // VIEW to status updates?
     AUTO_BIO: process.env.AUTO_BIO || "false",
